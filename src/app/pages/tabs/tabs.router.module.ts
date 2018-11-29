@@ -15,6 +15,11 @@ const routes: Routes = [
       },
       {
         path: 'about',
+        outlet: 'home',
+        loadChildren: '../about/about.module#AboutPageModule'
+      },
+      {
+        path: 'about',
         outlet: 'about',
         loadChildren: '../about/about.module#AboutPageModule'
       }
